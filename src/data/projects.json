@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Pürsu - Blockchain on SupplyChain",
+    "description": "A blockchain-based supply chain solution ensuring transparency and efficiency.",
+    "position": "flex-start",
+    "link": "https://purechain.onrender.com"
+  },
+  {
+    "id": 2,
+    "title": "Report Tool",
+    "description": "A tool for generating detailed reports with visual analytics.",
+    "position": "flex-end",
+    "link": "https://report-pt5r.onrender.com"
+  },
+  {
+    "id": 3,
+    "title": "onco404",
+    "description": "A project related to oncology research and analysis.",
+    "position": "flex-start"
+  },
+  {
+    "id": 4,
+    "title": "portfolio-react",
+    "description": "A dynamic portfolio website built with React.",
+    "position": "flex-end",
+    "link": "https://github.com/SMeydan/portfolio-react"
+  },
+  {
+    "id": 5,
+    "title": "travel2santorini",
+    "description": "A travel suggestion page about Santorini.",
+    "position": "flex-start",
+    "link": "https://github.com/SMeydan/travel2santorini"
+  },
+  {
+    "id": 6,
+    "title": "MangaPlus",
+    "description": "A Python-based tool for managing manga collections.",
+    "position": "flex-end",
+    "link": "https://github.com/SMeydan/MangaPlus"
+  },
+  {
+    "id": 7,
+    "title": "Magic-Tahsilat",
+    "description": "A financial management tool for tracking payments and invoices.",
+    "position": "flex-start",
+    "link": "https://github.com/SMeydan/Magic-Tahsilat"
+  },
+  {
+    "id": 8,
+    "title": "SafetySightAI",
+    "description": "An AI-powered safety monitoring system for workplaces.",
+    "position": "flex-end"
+  }
+]

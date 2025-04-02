@@ -1,0 +1,35 @@
+.projects-page {
+    width: 100%;
+    height: max-content;
+    background-color: #87758e;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    background-color: #87758e;
+    color: #000;
+  }
+  
+  .project {
+    width: 25%;
+    margin: 0px 0;
+    font-size: 24px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .project:nth-child(odd) {
+    margin-left: 10%;
+    margin-right: auto;
+  }
+  
+  .project:nth-child(even) {
+    margin-right: 10%;
+    margin-left: auto;
+  }

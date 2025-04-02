@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "position": "AI Engineering Intern",
+    "begin_date": "July 2024",
+    "end_date": "August 2024",
+    "company": "ArvisTech",
+    "description": "Developed and implemented a PPE (Personal Protective Equipment) detection system using YOLO for real-time image processing. Created a website dedicated to PPE detection, integrating the YOLO model to analyze and display results.",
+    "size": "170px",
+    "position_style": {
+      "top": "30%",
+      "left": "40%"
+    },
+    "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQG0KR7tRX5aqQ/company-logo_200_200/company-logo_200_200/0/1630633132556/arvis_technology_logo?e=2147483647&v=beta&t=VtVFDdvZqj7me2cs6X34UiCqcmyp1SoE8VYTHcSCxaY"
+  },
+  {
+    "id": 2,
+    "position": "Intellicamp Education",
+    "begin_date": "June 2024",
+    "end_date": "July 2024",
+    "company": "Intellica",
+    "description": "Wrote complex SQL queries to support data analysis and reporting needs. Gained proficiency in Power BI for data visualization and Oracle Data Integrator (ODI) for data integration processes. Learned the structure of data warehouses and successfully led a project to build a data warehouse for telecommunications data. Developed and presented comprehensive reports using Power BI, leveraging the data warehouse to provide actionable insights.",
+    "size": "150px",
+    "position_style": {
+      "top": "10%",
+      "left": "20%"
+    },
+    "logo": "https://cdn.talentics.app/intellica-public/logo.png"
+  },
+  {
+    "id": 3,
+    "position": "Computer Vision Intern",
+    "begin_date": "November 2023",
+    "end_date": "February 2024",
+    "company": "Ford Otosan",
+    "description": "For an Occupational Health and Safety (OHS) project, I learned YOLOv7, created and labeled a dataset for human detection, focusing on identifying workers with vests and helmets. Improved model precision for detecting these specific requirements.",
+    "size": "190px",
+    "position_style": {
+      "top": "50%",
+      "left": "60%"
+    },
+    "logo": "https://cdnuploads.aa.com.tr/uploads/sirkethaberleri/Contents/2019/07/08/thumbs_b_c_dd2aa7e4ce76c112141f4d220907eeeb.jpg"
+  },
+  {
+    "id": 4,
+    "position": "Intern",
+    "begin_date": "July 2020",
+    "end_date": "August 2020",
+    "company": "Vervo Makine",
+    "description": "Developed an application using Python and PyQt for workers to monitor and control packaging machines. This involved acquiring data from PLCs using Structured Text (ST) programming, and creating a user-friendly interface that allowed workers to effectively manage machine operations on their screens. This innovation significantly improved operational efficiency and user interaction with the machinery.",
+    "size": "160px",
+    "position_style": {
+      "top": "70%",
+      "left": "50%"
+    },
+    "logo": "https://geposb.com.tr/uploads/1585034062.jpg"
+  }
+]

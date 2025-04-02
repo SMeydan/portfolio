@@ -1,0 +1,196 @@
+.about-page {
+    width: 100vw;
+    height: 100vh;
+    background: #142791;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+  }
+  
+  /* Separate polka dot class for better control */
+  .polka-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(1, 242, 255, 0.7) 3px, transparent 4px);
+    background-size: 30px 30px;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .text-about {
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 4em;
+    font-weight: 700;
+    color: #ffe10a;
+    text-shadow:
+      1px 1px 1px #f2810d,
+      1px 2px 1px #f2810d,
+      1px 3px 1px #f2810d,
+      1px 4px 1px #f2810d,
+      1px 5px 1px #f2810d,
+      1px 6px 1px #f2810d,
+      1px 7px 1px #f2810d,
+      1px 8px 1px #f2810d,
+      1px 9px 1px #f2810d,
+      1px 10px 1px #f2810d,
+      1px 18px 6px rgba(255,255,255,0.4),
+      1px 22px 10px rgba(255,255,255,0.2),
+      1px 25px 35px rgba(255,255,255,0.2),
+      1px 30px 60px rgba(255,255,255,0.4);
+    -webkit-text-stroke: 3px black;
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  @keyframes rotateStar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes pulseStar {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes shakeStar {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+  }
+  
+  .star-top {
+    width: 700px;
+    height: auto;
+    position: absolute;
+    top: -20px;
+    right: -80px;
+    animation: pulseStar 2s ease-in-out infinite, shakeStar 3s ease-in-out infinite ,rotateStar 4s linear infinite;
+  }
+  
+  .star-bottom {
+    width: 250px;
+    height: auto;
+    position: relative;
+    align-self: flex-end;
+    margin-top: -40px;
+    animation: pulseStar 2s ease-in-out infinite, shakeStar 3s ease-in-out infinite ,rotateStar 4s linear infinite;
+  }
+  
+  blockquote.bubble {
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100%;
+    margin: 2rem auto;
+    text-align: center;
+    height: auto;
+    box-sizing: content-box;
+    line-height: 1;
+    position: relative;
+  }
+  
+  blockquote.electric {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
+    width: 80%;
+    height: max-content;
+    font-size: 2.4vw;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    padding: 6% 6% 12% 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  blockquote.electric span {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    max-width: 68%;
+    margin-right: 17%;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .text-about {
+      font-size: 3em;
+    }
+    
+    blockquote.electric {
+      width: 80%;
+      font-size: 24px;
+    }
+    
+    blockquote.electric span {
+      font-size: 20px;
+    }
+    
+    .star-top, .star-bottom {
+      width: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-about {
+      font-size: 2.5em;
+    }
+    
+    blockquote.electric {
+      width: 90%;
+      font-size: 16px;
+    }
+    
+    blockquote.electric span {
+      font-size: 12px;
+    }
+    
+    .star-top, .star-bottom {
+      width: 60px;
+    }
+  }

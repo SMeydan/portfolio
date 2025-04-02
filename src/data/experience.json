@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "position": "Analyst Developer",
+    "begin_date": "July 2024",
+    "end_date": "Present",
+    "company": "EVA",
+    "description": "Developed and automated onboarding, reporting, and CRM data processing systems using AppSheet, Google Apps Script, and AI, while enhancing data visualization, risk analysis, and speech evaluation with OCR and machine learning",
+    "size": "170px",
+    "position_style": {
+      "top": "30%",
+      "left": "40%"
+    },
+    "logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3q9v-y0_AoeNcEdiaxrhQCJ6v5iN6V7WWVshM9KY8pHeL5SV3VP19dv8_yqxl-USUcUM&usqp=CAU"
+  },
+  {
+    "id": 2,
+    "position": "Software Engineer",
+    "begin_date": "August 2023",
+    "end_date": "July 2024",
+    "company": "MagicPay",
+    "description": "Wrote a payment gateway which is able to process 1000+ transactions per second, and developed a web application for managing payment transactions using FastAPI, Docker, RabbitMQ and Celery",
+    "size": "150px",
+    "position_style": {
+      "top": "10%",
+      "left": "20%"
+    },
+    "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQFu5VtFoWwYZg/company-logo_200_200/company-logo_200_200/0/1696796926555?e=2147483647&v=beta&t=NwwfDVb4x4UuS9ZEXUk0KGBcH9w9xQlAFuyLdVBwZ7I"
+  },
+  {
+    "id": 3,
+    "position": "Experience 3",
+    "begin_date": "September 2022",
+    "end_date": "July 2023",
+    "company": "ÇAP Technology",
+    "description": "Developed ERP system with a team using ASP.NET Core, HTML, CSS, and JavaScript.",
+    "size": "190px",
+    "position_style": {
+      "top": "50%",
+      "left": "60%"
+    },
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnMJdUClXQOy8dX4Sc_p0IXtcZwG_XjHzEcw&s"
+  }
+]
