@@ -8,6 +8,7 @@ export default function ShaderAnimation() {
     if (!canvas) return;
 
     function syncSize() {
+      if (!canvas) return;
       const w = canvas.clientWidth || 1280;
       const h = canvas.clientHeight || 720;
       if (canvas.width !== w || canvas.height !== h) {
@@ -129,6 +130,7 @@ void main() {
     let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
 
     const handleMouseMove = (event: MouseEvent) => {
+      if (!canvas) return;
       const rect = canvas.getBoundingClientRect();
       if (rect.width && rect.height) {
         const nx = (event.clientX - rect.left) / rect.width;
@@ -141,6 +143,7 @@ void main() {
     window.addEventListener('mousemove', handleMouseMove);
 
     function render(t: number) {
+      if (!gl || !canvas) return;
       if (typeof ResizeObserver === 'undefined') syncSize();
       gl.viewport(0, 0, canvas.width, canvas.height);
       if (uTime) gl.uniform1f(uTime, t * 0.001);
