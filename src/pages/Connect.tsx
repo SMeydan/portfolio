@@ -42,21 +42,25 @@ export default function Connect() {
             <div>
               <h2 className="font-display-lg text-display-lg text-primary mb-4">Get in Touch</h2>
               <div className="space-y-4">
-                <a href="mailto:hello@sudenur.dev" className="block text-on-surface hover:text-primary transition-colors">
-                  hello@sudenur.dev
+                <a href="mailto:sudenurmeydan01@gmail.com" className="block text-on-surface hover:text-primary transition-colors">
+                  sudenurmeydan01@gmail.com
                 </a>
                 <div className="flex gap-4 pt-4">
-                  <a href="https://github.com/sudenur" target="_blank" rel="noopener noreferrer" 
+                  <a href="https://github.com/SMeydan" target="_blank" rel="noopener noreferrer" 
                      className="text-on-surface-variant hover:text-primary transition-colors">
                     GitHub
                   </a>
-                  <a href="https://linkedin.com/in/sudenur" target="_blank" rel="noopener noreferrer"
+                  <a href="https://www.linkedin.com/in/sudenur-meydan/" target="_blank" rel="noopener noreferrer"
                      className="text-on-surface-variant hover:text-primary transition-colors">
                     LinkedIn
                   </a>
-                  <a href="https://twitter.com/sudenur" target="_blank" rel="noopener noreferrer"
+                  <a href="" target="_blank" rel="noopener noreferrer"
                      className="text-on-surface-variant hover:text-primary transition-colors">
                     Twitter
+                  </a>
+                  <a href="https://www.medium.com/@sudenurmeydan01" target="_blank" rel="noopener noreferrer"
+                     className="text-on-surface-variant hover:text-primary transition-colors">
+                    Medium
                   </a>
                 </div>
               </div>

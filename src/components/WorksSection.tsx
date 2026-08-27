@@ -49,8 +49,7 @@ export default function WorksSection({ projects, loading }: WorksSectionProps) {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 auto-rows-[280px]">
         {projects.map((project, i) => {
-          const isLarge = i === 0 || i === 3;
-          const isTextCard = i === 3;
+          const isLarge = i === 0 || i === 3;;
 
           return (
             <div
@@ -59,67 +58,43 @@ export default function WorksSection({ projects, loading }: WorksSectionProps) {
                 isLarge ? 'md:col-span-2' : 'md:col-span-1'
               }`}
             >
-              {isTextCard ? (
-                <div className="flex flex-col justify-end h-full p-8">
-                  <div className="absolute top-6 right-6 w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center text-primary">
-                    <span className="material-symbols-outlined text-[18px]">
-                      bolt
+              {project.imageUrl ? (
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-90 transition-opacity"
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-2xl border border-secondary/40 flex items-center justify-center text-secondary">
+                    <span className="material-symbols-outlined text-[28px]">
+                      code
                     </span>
                   </div>
+                </div>
+              )}
 
-                  <div className="font-label-mono text-label-mono text-on-surface-variant mb-2 uppercase tracking-widest">
-                    System Architecture
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+
+              <div className="absolute bottom-0 left-0 p-8 w-full flex items-end justify-between">
+                <div>
+                  <div className="font-label-mono text-label-mono text-secondary-fixed-dim mb-2 uppercase tracking-widest">
+                    {project.technologies.slice(0, 3).join(' · ')}
                   </div>
 
-                  <h3 className="font-display-lg-mobile text-display-lg-mobile text-primary mb-4">
+                  <h3 className="font-display-lg-mobile text-display-lg-mobile text-primary">
                     {project.title}
                   </h3>
-
-                  <p className="font-body-sm text-body-sm text-on-surface-variant max-w-md">
-                    {project.description}
-                  </p>
                 </div>
-              ) : (
-                <>
-                  {project.imageUrl ? (
-                    <img
-                      src={project.imageUrl}
-                      alt={project.title}
-                      className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-16 h-16 rounded-2xl border border-secondary/40 flex items-center justify-center text-secondary">
-                        <span className="material-symbols-outlined text-[28px]">
-                          code
-                        </span>
-                      </div>
-                    </div>
-                  )}
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-
-                  <div className="absolute bottom-0 left-0 p-8 w-full flex items-end justify-between">
-                    <div>
-                      <div className="font-label-mono text-label-mono text-secondary-fixed-dim mb-2 uppercase tracking-widest">
-                        {project.technologies.slice(0, 3).join(' · ')}
-                      </div>
-
-                      <h3 className="font-display-lg-mobile text-display-lg-mobile text-primary">
-                        {project.title}
-                      </h3>
-                    </div>
-
-                    {i === 0 && (
-                      <div className="w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-background transition-colors">
-                        <span className="material-symbols-outlined text-[18px]">
-                          arrow_outward
-                        </span>
-                      </div>
-                    )}
+                {i === 0 && (
+                  <div className="w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-background transition-colors">
+                    <span className="material-symbols-outlined text-[18px]">
+                      arrow_outward
+                    </span>
                   </div>
-                </>
-              )}
+                )}
+              </div>
             </div>
           );
         })}

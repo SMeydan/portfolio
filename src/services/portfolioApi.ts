@@ -3,43 +3,46 @@ import type { Profile, Project } from "../types";
 const projects: Project[] = [
   {
     id: 1,
-    title: "MedNexus AI",
+    title: "NiCo",
     description:
-      "An AI-powered medical information platform built with FastAPI and PostgreSQL.",
-    technologies: ["Python", "FastAPI", "PostgreSQL", "AI"],
-    gitHubUrl: null,
+      "An AI agent orchestration system for intelligent task planning, tool execution, context management, and permission-aware workflows.",
+    technologies: ["Python", "AI", "LLMs", "MCP", "FastAPI"],
+    gitHubUrl: "https://github.com/SMeydan/NiCo",
     liveUrl: null,
-    imageUrl: "/images/projects/mednexus.jpg",
+    imageUrl: "../public/nico.jpg",
   },
+
   {
     id: 2,
-    title: "Warehouse Automation",
+    title: "MedNexus AI",
     description:
-      "A backend system for warehouse automation, inventory management, and operational workflows.",
-    technologies: [".NET", "C#", "PostgreSQL", "Docker"],
-    gitHubUrl: null,
+      "An AI-powered healthcare platform for intelligent medical information retrieval and patient-focused insights.",
+    technologies: ["Python", "FastAPI", "PostgreSQL", "AI"],
+    gitHubUrl: "https://github.com/SMeydan/mednexus-ai",
     liveUrl: null,
-    imageUrl: "/images/projects/warehouse.jpg",
+    imageUrl: "../public/mednexus.jpg",
   },
+
   {
     id: 3,
-    title: "Payment Gateway",
+    title: "MangaPlus",
     description:
-      "Backend services and payment integrations designed for secure and reliable financial transactions.",
-    technologies: ["Python", "FastAPI", "PostgreSQL", "Redis"],
-    gitHubUrl: null,
+      "A backend platform for manga content management, user interactions, and scalable data services.",
+    technologies: ["Python", "FastAPI", "PostgreSQL", "Azure"],
+    gitHubUrl: "https://github.com/SMeydan/MangaPlus",
     liveUrl: null,
-    imageUrl: "/images/projects/payment.jpg",
+    imageUrl: "../public/mangaplus.jpg",
   },
+
   {
     id: 4,
-    title: "System Architecture",
+    title: "FenomenSuggestionSystem",
     description:
-      "Exploring scalable backend architectures, distributed systems, caching, messaging, and system design.",
-    technologies: [".NET", "RabbitMQ", "Redis", "Docker"],
-    gitHubUrl: null,
+      "A recommendation system for discovering relevant social media influencers based on user preferences and data-driven matching.",
+    technologies: ["Python", "Machine Learning", "Recommendation Systems"],
+    gitHubUrl: "https://github.com/SMeydan/FenomenSuggestionSystem",
     liveUrl: null,
-    imageUrl: "",
+    imageUrl: "../public/fenomen.jpg",
   },
 ];
 
