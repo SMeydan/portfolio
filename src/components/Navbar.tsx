@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const links = [
-  { to: '#work', label: 'Work' },
-  { to: '#about', label: 'About' },
-  { to: '#toolkit', label: 'Toolkit' },
-  { to: '#experience', label: 'Experience' },
+  { to: '/#work', label: 'Work' },
+  { to: '/#about', label: 'About' },
+  { to: '/#toolkit', label: 'Toolkit' },
+  { to: '/#experience', label: 'Experience' },
+  { to: '/blog', label: 'Blog', isRoute: true },
 ];
 
 export default function Navbar() {
@@ -51,24 +53,33 @@ export default function Navbar() {
         Sudenur Meydan
       </a>
       <div className="hidden md:flex items-center gap-8">
-        {links.map(({ to, label }) => (
-          <a
-            key={to}
-            href={to}
-            onClick={(e) => handleScrollTo(e, to)}
-            className={`font-label-mono text-label-mono cursor-hover transition-colors duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,219,231,0.3)] ${
-              activeSection === to
-                ? 'text-primary font-bold border-b-2 border-primary pb-1'
-                : 'text-on-surface-variant hover:text-primary'
-            }`}
-          >
-            {label}
-          </a>
+        {links.map(({ to, label, isRoute }) => (
+          isRoute ? (
+            <Link
+              key={to}
+              to={to}
+              className="font-label-mono text-label-mono cursor-hover transition-colors duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,219,231,0.3)] text-on-surface-variant hover:text-primary"
+            >
+              {label}
+            </Link>
+          ) : (
+            <Link
+              key={to}
+              to={`/${to}`}
+              className={`font-label-mono text-label-mono cursor-hover transition-colors duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,219,231,0.3)] ${
+                activeSection === to
+                  ? 'text-primary font-bold border-b-2 border-primary pb-1'
+                  : 'text-on-surface-variant hover:text-primary'
+              }`}
+            >
+              {label}
+            </Link>
+          )
         ))}
       </div>
-      <button className="bg-primary-container text-on-primary-container font-label-mono text-label-mono px-6 py-2 rounded-full interactive-btn cursor-hover ml-4 hidden md:block">
+      <Link to="/connect" className="bg-primary-container text-on-primary-container font-label-mono text-label-mono px-6 py-2 rounded-full interactive-btn cursor-hover ml-4 hidden md:block">
         Connect
-      </button>
+      </Link>
     </nav>
   );
 }

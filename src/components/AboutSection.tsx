@@ -12,7 +12,7 @@ export default function AboutSection() {
       id="about"
     >
       <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
-        <div className="md:col-span-7 md:col-start-3 flex flex-col justify-center">
+        <div className="md:col-span-7 md:col-start-2 flex flex-col justify-center">
           <div className="font-label-mono text-label-mono text-secondary-container mb-4 uppercase tracking-widest">
             About Me
           </div>
@@ -42,6 +42,17 @@ export default function AboutSection() {
               more deeply.
             </p>
           </div>
+        </div>
+
+        <div className="md:col-span-4 relative h-[400px] md:h-[500px]">
+          <video 
+            src="/about.mp4" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="w-full h-full object-cover rounded-2xl"
+          />
         </div>
       </div>
     </section>
