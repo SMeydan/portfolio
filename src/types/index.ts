@@ -47,3 +47,15 @@ export interface Category {
   name: string;
   slug: string;
 }
+
+export interface Experience {
+  id: number;
+  position: string;
+  company: string;
+  description: string;
+}
+
+export interface ToolkitItem {
+  name: string;
+  icon: string;
+}
