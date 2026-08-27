@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <section
       ref={ref as any}
-      className={`py-32 px-6 md:px-16 max-w-[1440px] mx-auto relative z-10 transition-all duration-1000 ease-out ${
+      className={`py-20 px-6 md:px-16 max-w-[1440px] mx-auto relative z-10 transition-all duration-1000 ease-out ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}
       id="about"
@@ -23,23 +23,21 @@ export default function AboutSection() {
             Learning AI.
           </h2>
 
-          <div className="space-y-6 text-on-surface-variant font-body-lg text-body-lg max-w-2xl">
+          <div className="space-y-6 text-on-surface-variant font-body-lg text-body-lg max-w-2xl mb-8">
             <p>
-              I&apos;m a Computer Engineering student and software engineer
-              focused on backend development and AI.
+              Backend Software Engineer focused on fintech/payment systems and production-ready API development.
+              Experienced in designing payment gateway integrations, building FastAPI and .NET services, implementing
+              asynchronous workflows with Celery, RabbitMQ and Redis, and working with PostgreSQL-backed data models.
             </p>
 
             <p>
-              I enjoy understanding how systems work under the hood,
-              building things from scratch, and turning what I learn into
-              practical projects.
+              Focused on writing clean, readable and maintainable backend code, improving code quality through SonarQube
+              findings, dependency cleanup and nullable-safety fixes.
             </p>
 
             <p>
-              My main experience is with backend technologies such as .NET,
-              Python, PostgreSQL, and Docker. Recently, I&apos;ve been
-              exploring machine learning, neural networks, and system design
-              more deeply.
+              Comfortable using AI tools to speed up development, improve technical analysis and adapt AI-assisted
+              solutions into backend projects when they create practical value.
             </p>
           </div>
         </div>

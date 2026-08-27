@@ -1,5 +1,6 @@
 import type { Experience } from '../types';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useEffect, useRef, useState } from 'react';
 import AboutThreeJS from './AboutThreeJS';
 
 interface ExperienceSectionProps {
@@ -8,24 +9,52 @@ interface ExperienceSectionProps {
 
 export default function ExperienceSection({ experience }: ExperienceSectionProps) {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
+  const [robotOffset, setRobotOffset] = useState(0);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
+      
+      const rect = sectionRef.current.getBoundingClientRect();
+      const sectionTop = rect.top;
+      const sectionHeight = rect.height;
+      const windowHeight = window.innerHeight;
+      
+      // Calculate scroll progress within the section
+      const scrollProgress = Math.max(0, Math.min(1, -sectionTop / (sectionHeight - windowHeight)));
+      
+      // Move robot up/down based on scroll (range: -250px to 250px)
+      setRobotOffset(scrollProgress * 500 - 250);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <section
-      ref={ref as any}
+      ref={(el) => {
+        ref.current = el;
+        sectionRef.current = el;
+      }}
       className={`py-32 px-6 md:px-16 max-w-[1440px] mx-auto relative z-10 transition-all duration-1000 ease-out ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}
       id="experience"
     >
       <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
-        <div className="md:col-span-5 md:col-start-2 relative h-[400px] md:h-[500px] order-2 md:order-1">
+        <div className="md:col-span-5 md:col-start-2 relative h-auto min-h-[1100px] order-2 md:order-1">
           <div className="absolute inset-0 rounded-2xl overflow-hidden">
             <AboutThreeJS />
           </div>
           <img 
             src="/robot.gif" 
             alt="Robot" 
-            className="absolute inset-0 w-full h-full object-contain z-10 pointer-events-none"
+            className="absolute inset-0 w-full h-full object-contain z-10 pointer-events-none transition-transform duration-100 ease-out"
+            style={{ transform: `translateY(${robotOffset}px)` }}
           />
         </div>
 
