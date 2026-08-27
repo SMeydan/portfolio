@@ -25,7 +25,6 @@ export default function AboutThreeJS() {
     const THREE = window.THREE;
     if (!THREE) return;
 
-    const devicePixelRatio = window.devicePixelRatio || 1;
     const scene = new THREE.Scene();
     const containerWidth = container.clientWidth || window.innerWidth;
     const containerHeight = container.clientHeight || window.innerHeight;
