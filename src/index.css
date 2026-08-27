@@ -5,6 +5,10 @@ body {
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .custom-cursor {
     width: 8px;
     height: 8px;
