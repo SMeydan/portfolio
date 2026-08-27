@@ -32,6 +32,7 @@ export const toolkit: ToolkitItem[] = [
 export const experiences: Experience[] = [
   {
     id: 1,
+    imageUrl: "/companies/hangikredi.png",
     position: "Software Engineer",
     company: "Hangikredi / Hangipara",
     description:
@@ -39,6 +40,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 2,
+    imageUrl: "/companies/oyak-renault.png",
     position: "Software Engineer",
     company: "Renault / Horse Technology",
     description:
@@ -46,6 +48,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 3,
+    imageUrl: "/companies/magicpay.png",
     position: "Software Engineer",
     company: "MagicPay",
     description:
@@ -53,6 +56,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 4,
+    imageUrl: "/companies/intellica.png",
     position: "Intellicamp Intern",
     company: "Intellica",
     description:
@@ -60,6 +64,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 5,
+    imageUrl: "/companies/ford.png",
     position: "Computer Vision Intern",
     company: "Ford Otosan",
     description:
@@ -67,6 +72,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 6,
+    imageUrl: "/companies/vervo.png",
     position: "Intern",
     company: "Vervo Makine",
     description:

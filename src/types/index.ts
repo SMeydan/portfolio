@@ -50,6 +50,7 @@ export interface Category {
 
 export interface Experience {
   id: number;
+  imageUrl?: string;
   position: string;
   company: string;
   description: string;
