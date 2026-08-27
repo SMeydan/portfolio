@@ -9,7 +9,7 @@ export default function Blog() {
       date: '2024-01-15',
       readTime: '5 min read',
       category: 'AI',
-      imageUrl: '../public/gradient.jpg',
+      imageUrl: '/gradient.jpg',
       link: '/blog/neural-networks.html'
     },
     {
@@ -19,7 +19,7 @@ export default function Blog() {
       date: '2024-01-10',
       readTime: '8 min read',
       category: 'Backend',
-      imageUrl: '../public/gradient.jpg',
+      imageUrl: '/gradient.jpg',
       link: '/blog/scalable-backend'
     },
     {

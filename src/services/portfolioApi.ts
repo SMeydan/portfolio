@@ -9,7 +9,7 @@ const projects: Project[] = [
     technologies: ["Python", "AI", "LLMs", "MCP", "FastAPI"],
     gitHubUrl: "https://github.com/SMeydan/NiCo",
     liveUrl: null,
-    imageUrl: "../public/nico.jpg",
+    imageUrl: "/nico.jpg",
   },
 
   {
@@ -20,7 +20,7 @@ const projects: Project[] = [
     technologies: ["Python", "FastAPI", "PostgreSQL", "AI"],
     gitHubUrl: "https://github.com/SMeydan/mednexus-ai",
     liveUrl: null,
-    imageUrl: "../public/mednexus.jpg",
+    imageUrl: "/mednexus.jpg",
   },
 
   {
@@ -31,7 +31,7 @@ const projects: Project[] = [
     technologies: ["Python", "FastAPI", "PostgreSQL", "Azure"],
     gitHubUrl: "https://github.com/SMeydan/MangaPlus",
     liveUrl: null,
-    imageUrl: "../public/mangaplus.jpg",
+    imageUrl: "/mangaplus.jpg",
   },
 
   {
@@ -42,7 +42,7 @@ const projects: Project[] = [
     technologies: ["Python", "Machine Learning", "Recommendation Systems"],
     gitHubUrl: "https://github.com/SMeydan/FenomenSuggestionSystem",
     liveUrl: null,
-    imageUrl: "../public/fenomen.jpg",
+    imageUrl: "/fenomen.jpg",
   },
 ];
 
