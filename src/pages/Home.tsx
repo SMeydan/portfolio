@@ -75,7 +75,7 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-          <span className="font-label-mono text-label-mono text-surface-variant uppercase tracking-widest text-[10px]">
+          <span className="font-label-mono text-label-mono text-white uppercase tracking-widest text-[10px] opacity-75">
             Scroll to explore
           </span>
 
